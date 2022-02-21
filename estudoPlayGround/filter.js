@@ -10,6 +10,15 @@ const numerosPares = (numero) => {
 
 const resultado = numeros.filter(numerosPares)
 
-console.log(maiores)
+const estudantes = require('./arrayEstudantes')
 
-console.log(resultado)
+const nomeCompletoManha = (arrayDeEstudantes) => {
+    const estudanteManha = arrayDeEstudantes.filter((estudante) => estudante.turno === 'Manhã')
+    console.log(estudanteManha.map((estudante) => estudante.nome + ' ' + estudante.sobrenome))
+}
+
+// console.log(maiores)
+
+// console.log(resultado)
+
+nomeCompletoManha(estudantes)

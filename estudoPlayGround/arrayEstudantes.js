@@ -74,4 +74,3 @@ const estudantes = [
   ];
 
   module.exports = estudantes
-  

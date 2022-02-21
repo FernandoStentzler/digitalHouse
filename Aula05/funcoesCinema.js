@@ -43,6 +43,6 @@ function alterarStatusEmCartaz(id) {
 
 adicionarFilme(novoFilme)
 
-// listarTodosOsFilmes(catalogo)
-// listarFilmesEmCartaz(catalogo)
-// alterarStatusEmCartaz(4)
+listarTodosOsFilmes(catalogo)
+listarFilmesEmCartaz(catalogo)
+alterarStatusEmCartaz(4)

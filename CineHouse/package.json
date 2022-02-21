@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.15"
+  },
+  "name": "cinehouse",
+  "version": "1.0.0",
+  "main": "cinema.js",
+  "scripts": {
+    "start": "node ./cinema.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

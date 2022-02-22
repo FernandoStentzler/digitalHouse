@@ -6,5 +6,5 @@ let bart = {
 }
 
 for(let prop in bart){
-    console.log(bart[prop])
+    console.log(prop ,bart[prop])
 }

@@ -30,16 +30,17 @@ const estudantes = require('./arrayEstudantes')
 
 const situacaoEstudante = (arrayDeEstudante, nome, sobrenome) => {
     const filtraPeloNome = arrayDeEstudante.find((estudante) => estudante.nome === nome && estudante.sobrenome === sobrenome)
+    console.log(`Aluno: ${filtraPeloNome.nome} ${filtraPeloNome.sobrenome}`)
     console.log(filtraPeloNome.materias.map(
-        (materias) => `${filtraPeloNome.nome} ${filtraPeloNome.sobrenome} ${materias.name} ${materias.nota >= 60 ? 'Aprovado' : 'Reprovado'}`
+        (materias) => `${materias.name} ${materias.nota >= 60 ? 'Aprovado' : 'Reprovado'}`
         )
     )
 }
 
-situacaoEstudante(estudantes, 'Jorge', 'Santos')
+situacaoEstudante(estudantes, 'Jorge', 'Silva')
 
-console.log(numerosNegativos(numeros, transformarNegativo))
+// console.log(numerosNegativos(numeros, transformarNegativo))
 
-console.log(processar(array, adicionarHttp))
+// console.log(processar(array, adicionarHttp))
 
-console.log(negativos)
+// console.log(negativos)

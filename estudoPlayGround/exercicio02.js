@@ -4,3 +4,4 @@
 // separador é a barra (/) da data.
 // Exemplo:
 // Para a entrada “22/04/1983” deve ser escrito “22 de abril de 1983”.
+

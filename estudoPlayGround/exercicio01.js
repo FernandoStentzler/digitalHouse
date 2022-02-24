@@ -40,7 +40,6 @@ const buscarPelaInicial = (array, inicial) => {
     return auxiliar
 }
 
-
-console.log(buscarPelaInicial(estados, "S"))
+console.log(buscarPelaInicial(estados, "T"))
 
 // console.log((estados.filter(a => Object.keys(a).filter(a => a[0] === 'T').length)))

@@ -67,7 +67,7 @@ const books = [
   // Dica: use a função find .
   function authorBornIn1947(array, ano) {
     let auxiliar = array.find((livro) => livro.author.birthYear === ano)
-    console.log(auxiliar)
+    return auxiliar
   }
   
   // 2 - Retorne o nome do livro de menor nome
@@ -82,6 +82,7 @@ const books = [
   
   // 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
   function getNamedBook() {
+
     // escreva seu código aqui
   }
   
@@ -96,4 +97,4 @@ const books = [
     // escreva seu código aqui
   }
 
-  authorBornIn1947(books, 1947)
+  console.log(authorBornIn1947(books, 1947))

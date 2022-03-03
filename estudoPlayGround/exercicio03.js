@@ -66,13 +66,13 @@ const books = [
   //  1 - Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
   // Dica: use a função find .
   function authorBornIn1947(array, ano) {
-    let auxiliar = array.find((livro) => livro.author.birthYear === ano)
-    return auxiliar
+    let auxiliar = array.find( livro => livro.author.birthYear === ano)
+    return `${auxiliar.author.name}`
   }
   
   // 2 - Retorne o nome do livro de menor nome
   //Dica use a função forEach 
-  function smallerName() {
+  function smallerName(array) {
     let nameBook;
     // escreva aqui o seu código
   
@@ -81,20 +81,26 @@ const books = [
   }
   
   // 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
-  function getNamedBook() {
+  function getNamedBook(array) {
 
     // escreva seu código aqui
   }
   
   // 4 - Ordene os livros por data de lançamento em ordem decrescente.
   // Dica Utiliza a função sort.
-  function booksOrderedByReleaseYearDesc() {
-    // escreva aqui seu código
+  function booksOrderedByReleaseYearDesc(array) {
+    let auxiliar = array.sort((a, b) => b.author.birthYear - a.author.birthYear)
+    return auxiliar
   }
   
   // 5 - Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
-  function everyoneWasBornOnSecXX() {
-    // escreva seu código aqui
+  function everyoneWasBornOnSecXX(array, seculo) {
+  array.map(element => element.author.birthYear === seculo)
+  return 
   }
 
   console.log(authorBornIn1947(books, 1947))
+
+  console.log(everyoneWasBornOnSecXX(books, 20))
+
+  console.log(booksOrderedByReleaseYearDesc(books))

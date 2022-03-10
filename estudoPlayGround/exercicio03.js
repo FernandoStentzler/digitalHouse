@@ -73,11 +73,16 @@ const books = [
   // 2 - Retorne o nome do livro de menor nome
   //Dica use a função forEach 
   function smallerName(array) {
-    let nameBook;
-    // escreva aqui o seu código
+    let nameBook 
+    array.forEach(livro => {nameBook = livro.name.length
+    if(livro.name.length < nameBook.length){
+    nameBook = livro.name
+    }
+    return nameBook;
+  });
   
     // Variável nameBook que receberá o valor do menor nome;
-    return nameBook;
+    
   }
   
   // 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
@@ -99,8 +104,10 @@ const books = [
   return 
   }
 
-  console.log(authorBornIn1947(books, 1947))
+  // console.log(authorBornIn1947(books, 1947))
 
-  console.log(everyoneWasBornOnSecXX(books, 20))
+  // console.log(everyoneWasBornOnSecXX(books, 20))
 
-  console.log(booksOrderedByReleaseYearDesc(books))
+  // console.log(booksOrderedByReleaseYearDesc(books))
+
+  console.log(smallerName(books))
